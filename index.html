@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Drop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="dropzone-box">
+        <h2>Fazer upload do arquivo.</h2>
+        <p>Clique para fazer o upload ou arraste e solte</p>
+        <div class="dropzone-area">
+            <div class="file-upload-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-upload" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#D4DCE6" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1" />
+                    <path d="M9 15l3 -3l3 3" />
+                    <path d="M12 12l0 9" />
+                </svg>
+            </div>
+            <input type="file" name="upload-file" id="upload-file" accept="image/*">
+            <p class="file-info">Nenhum arquivo selecionado</p>
+        </div>
+        <div class="dropzone-description">
+            <span>
+                Formato suportados: JPEG, JPG, PNG, ...
+            </span>
+            <span>
+                Tamanho máximo do arquivo: 25MB
+            </span>
+        </div>
+        <div class="dropzone-actions">
+            <div class="dropzone-help">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-help"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 17l0 .01" /><path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" /></svg>
+                Ajuda
+            </div>
+            <div class="action-buttons">
+                <button type="reset">
+                    Cancelar
+                </button>
+                <button type="submit" id="submit-button">
+                    Salvar
+                </button>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!--                         REFERENCE https://github.com/atherosai                 -->

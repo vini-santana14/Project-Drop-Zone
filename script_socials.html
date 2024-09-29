@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>File Drop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <form class="dropzone-box">
+        <h2>Fazer upload do arquivo.</h2>
+        <p>Clique para fazer o upload ou arraste e solte</p>
+        <div class="dropzone-area">
+            <div class="file-upload-icon">
+                <!-- svg file upload -->
+            </div>
+            <input 
+                type="file" required 
+                id="upload-file" name="uploaded-file"
+                accept="image/*"
+            >
+            <p class="file-info">Nenhum arquivo selecionado</p>
+        </div>
+        <div class="dropzone-description">
+            <span>Tamanho máximo do arquivo: 25MB</span>
+        </div>
+        <div class="dropzone-actions">
+            <div class="dropzone-help">
+                <!-- help center -->
+                Ajuda
+            </div>
+            <div>
+                <button type="reset">Cancelar</button>
+                <button id="submit-button" type="submit">
+                    Salvar
+                </button>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
